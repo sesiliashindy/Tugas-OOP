@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Person person = new Person();
+        // Person person = new Person();
         Student student = new Student();
         
         Scanner input = new Scanner(System.in);
@@ -10,13 +10,13 @@ public class App {
         System.out.println("Nama mahasiswa ");
         System.out.println("Nama depan: ");
         String firstName = input.nextLine();
-        person.firstName = firstName;
+        student.firstName = firstName;
         System.out.println("Nama belakang: ");
         String lastName = input.nextLine();
-        person.lastName = lastName;
+        student.lastName = lastName;
         System.out.println("Kota Domisili: ");
         String domisili = input.next();
-        person.setDomisili(domisili);
+        student.setDomisili(domisili);
         // person.getFullName();
         // System.out.println(person.getFullName()); 
         

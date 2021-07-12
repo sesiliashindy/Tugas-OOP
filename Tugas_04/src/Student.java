@@ -22,7 +22,7 @@ public class Student extends Person implements StudentService {
     public void jumlahSks() {
         System.out.println("Total SKS: " + getSks());
     }
-    
+
     @Override
     public void studentRegistration() {
        System.out.println("Nama Lengkap: "+getFullName());
@@ -54,7 +54,7 @@ public class Student extends Person implements StudentService {
         jumlahSks();
 
         if (sks>=144) {
-            System.out.println(getFullName() + "S.Si");
+            System.out.println(getFullName()+" "+ "S.Si");
         } else {
             System.out.println("Mahasiswa");
         }
