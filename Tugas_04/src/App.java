@@ -4,10 +4,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Person person = new Person();
         Student student = new Student();
-        
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Nama mahasiswa ");
+        System.out.println("\tNama mahasiswa\t");
+        System.out.println("______________________________________________");
         System.out.println("Nama depan: ");
         String firstName = input.nextLine();
         student.firstName = firstName;
@@ -19,7 +19,6 @@ public class App {
         student.setDomisili(domisili);
         // person.getFullName();
         // System.out.println(person.getFullName()); 
-        
         System.out.println("Nomor Mahasiswa: ");
         String studentCode = input.next();
         student.studentCode = studentCode;

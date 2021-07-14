@@ -6,6 +6,7 @@ public class Student extends Person implements StudentService {
     int roomCode;
     // String courseName;
     private int sks;
+    int jumlah=0;
 
     public int getSks() {
         return sks;
@@ -15,13 +16,13 @@ public class Student extends Person implements StudentService {
     //     this.sks = sks;
     // }
 
-    public int countSks(String courseName){
-        return sks+=30;
-    }
+    // public int countSks(String courseName){
+    //     return sks+=30;
+    // }
 
-    public void jumlahSks() {
-        System.out.println("Total SKS: " + getSks());
-    }
+    // public void jumlahSks() {
+    //     System.out.println("Total SKS: " + jumlah);
+    // }
 
     @Override
     public void studentRegistration() {
@@ -39,21 +40,29 @@ public class Student extends Person implements StudentService {
             for (int i = 0; i < n; i++) {
                 System.out.println("Input Matakuliah= ");
                 matkul [i] = input.next();
-                countSks(matkul[i]);
+                // countSks(matkul[i]);
             }
-        
-        System.out.println("Input Kode Ruangan(number)= ");
-        roomCode = input.nextInt();
 
         for (int i = 0; i < n; i++) {
             System.out.println("Matakuliah yang diambil:"+matkul[i]);
         }
         // System.out.println("nama matkul"+" "+courseName);
 
-        System.out.println("ruangan kuliah"+" "+roomCode);
-        jumlahSks();
+        Integer sks[] = new Integer[n]; 
+        for (int i = 0; i < n; i++) {
+            System.out.println("Jumlah sks: ");
+            sks[i] = input.nextInt();
+            jumlah = jumlah+sks[i];
+        }
+        System.out.println("Total sks: "+jumlah);
 
-        if (sks>=144) {
+        System.out.println("Input Kode Ruangan(number)= ");
+        roomCode = input.nextInt();
+
+        System.out.println("ruangan kuliah"+" "+roomCode);
+        // jumlahSks();
+
+        if (jumlah>=144) {
             System.out.println(getFullName()+" "+ "S.Si");
         } else {
             System.out.println("Mahasiswa");
