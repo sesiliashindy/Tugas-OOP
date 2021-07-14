@@ -167,7 +167,7 @@ public class App {
                     if (input1.equalsIgnoreCase("Y")) {
                         repeat1 = true;
                     } else {
-                        repeat = false;
+                        // repeat = false;
                         System.out.println("______________________________________________");
                         detailmenu.manual();
                         System.out.println("______________________________________________");

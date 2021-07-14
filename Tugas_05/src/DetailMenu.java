@@ -53,6 +53,7 @@ public class DetailMenu implements ReceiptService {
         return getTotalHarga;
     }
 
+
     public int getTotalPajak(){
         int getTotalPajak = (harga*10)/100;
         return getTotalPajak;
@@ -70,7 +71,7 @@ public class DetailMenu implements ReceiptService {
         String formattedDate = dateTime.format(formatter);
         System.out.println(formattedDate);
         for (int i=0; i<listMenu.size(); i++) {
-            System.out.println((i+1)+"\t"+listMenu.get(i)+"\t"+quantity.get(i)+price.get(i));
+            System.out.println((i+1)+"\t"+listMenu.get(i)+"\t"+quantity.get(i)+"\t"+price.get(i));
         }
         System.out.println("Total Harga: \t"+"Rp."+getTotalHarga());
         System.out.println("Total Pajak: \t"+"Rp."+getTotalPajak());
